@@ -24,7 +24,7 @@ const projects = [
       "Das Hauptwerk des Projekts. Es untersucht, ob sich der Urknall als Phasenübergang eines einzigen Mediums beschreiben lässt, und prüft jede Aussage an veröffentlichten Messwerten. Kennzeichnung jeder Aussage als Postulat [P], Folgerung [F] oder Vorhersage [V]; die Rechnungen stehen in den Anhängen A bis J.",
     tags: ["Buch", "Kosmologie", "Medium", "Atomebene"],
     links: [
-      { label: "PDF herunterladen (14,9 MB)", url: DOCS + "Reuvekamp_War-der-Urknall-ein-Phasenuebergang_2026-11-10.pdf", download: true },
+      { label: "PDF herunterladen (14,9 MB)", url: DOCS + "Reuvekamp_War-der-Urknall-ein-Phasenuebergang.pdf", download: true },
       { label: "Inhalt", url: "#buch" },
     ],
     year: "Nov. 2026",
