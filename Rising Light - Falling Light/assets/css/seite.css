@@ -1,0 +1,19 @@
+
+:root{--a:#ffe500;--a2:#fff3a0}
+*{box-sizing:border-box}html{background:#0a0b10}body{margin:0;background:#0a0b10;color:#f3f2ee;font:400 17px/1.65 var(--vb-sans)}
+a{color:#fff}.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+header.top{padding:22px 0;border-bottom:1px solid var(--vb-line)}header.top .wrap{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.02em;text-decoration:none;display:flex;align-items:center;gap:10px}.brand i{width:12px;height:12px;border-radius:50%;background:var(--a);box-shadow:0 0 10px var(--a)}
+header nav a{color:var(--vb-mute);text-decoration:none;margin-left:18px;font-size:15px}header nav a:hover{color:#fff}
+.hero{padding:92px 0 64px}.eyebrow{font:600 12.5px/1 var(--vb-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--a)}
+h1{font:400 clamp(44px,8vw,88px)/1.02 var(--vb-serif);margin:18px 0 20px;letter-spacing:-.01em}h1 em{color:var(--a)}
+h2{font:400 34px/1.15 var(--vb-serif);margin:0 0 14px}.lead{font-size:20px;color:var(--vb-mute);max-width:44em}
+.status{display:inline-flex;gap:10px;align-items:center;border:1px solid var(--a);border-radius:999px;padding:7px 16px;font:600 13px/1 var(--vb-mono);margin-top:12px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--a);animation:p 2s infinite}@keyframes p{50%{opacity:.3}}
+section{padding:56px 0;border-top:1px solid var(--vb-line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
+.card{border:1px solid var(--vb-line);border-radius:14px;padding:22px;background:#11131b}.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--vb-mute)}
+.card.ph{border-style:dashed}.folgt{font:600 12px/1 var(--vb-mono);color:var(--a2);letter-spacing:.08em;text-transform:uppercase}
+.btn{display:inline-block;margin-top:22px;padding:12px 22px;border:1px solid var(--a);border-radius:10px;text-decoration:none;font-weight:600}.btn:hover{background:var(--a);color:#0a0b10}
+blockquote{margin:22px 0;padding-left:18px;border-left:3px solid var(--a);font:italic 400 24px/1.4 var(--vb-serif)}
+@media (prefers-reduced-motion:reduce){.status i{animation:none}}

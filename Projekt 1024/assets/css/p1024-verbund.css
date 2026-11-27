@@ -1,0 +1,58 @@
+/* projekt1024.net · Ergänzungen für den Verbund (M.A.N.T.I.S. 1024, Endless on Fire, Theorie, Modelle) */
+.hdr .vb-bar .vb-in{max-width:none;padding-left:clamp(20px,4vw,56px);padding-right:clamp(20px,4vw,56px)}
+.hdr.is-hidden .vb-bar{visibility:hidden}
+@media (max-width:860px){.hero{padding-top:128px}}
+.nav .vb-dot{margin-right:7px;vertical-align:1px}
+.fnav .vb-dot{margin-right:8px}
+/* Startseite: Verbund-Band */
+.vbh-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.vbh-card{display:flex;flex-direction:column;gap:10px;padding:28px;border-radius:14px;background:#0a0b10;color:#f3f2ee;text-decoration:none;border:1px solid rgba(255,255,255,.1);position:relative;overflow:hidden;transition:transform .25s}
+.vbh-card::before{content:"";position:absolute;left:0;right:0;top:0;height:4px}
+.vbh--p1024::before{background:var(--vb-p1024)}.vbh--mantis::before{background:var(--vb-mantis)}.vbh--eof::before{background:var(--vb-eof)}
+.vbh-card:hover,.vbh-card:focus-visible{transform:translateY(-3px)}
+.vbh-card img{width:64px;height:64px;border-radius:12px;object-fit:cover;background:#000}
+.vbh--p1024 img{border-radius:50%}
+.vbh-card .mono{font-family:var(--vb-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#a9abb8}
+.vbh-card h3{margin:0;font:600 24px/1.2 var(--vb-sans);color:#fff}
+.vbh-card p{margin:0;color:#c9cad3;font-size:16px;line-height:1.5}
+.vbh-card .link{margin-top:auto;color:#fff;font-weight:600}
+@media (max-width:900px){.vbh-grid{grid-template-columns:1fr}}
+/* Forschung: Theorie-Überblick */
+.th-badge{display:flex;flex-direction:column;align-items:center;gap:6px;margin:0 0 28px;text-align:center}
+.th-badge span{font-family:var(--vb-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border:1px dashed currentColor;border-radius:4px;opacity:.85}
+.th-badge b{font:600 clamp(26px,3vw,36px)/1.1 var(--vb-sans)}
+.th-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.th-card{border-radius:14px;padding:26px;border:1px solid var(--c-line);background:color-mix(in srgb,var(--thc) 9%,var(--c-bg));border-top:4px solid var(--thc)}
+.th-card .mono{font-family:var(--vb-mono);font-size:26px;font-weight:700;color:var(--thc);margin:0;letter-spacing:.04em}
+.th-card h3{margin:8px 0 6px;font:600 20px/1.3 var(--vb-sans);color:var(--c-fg)}
+.th-card .th-q{margin:0;color:var(--c-fg2);font-size:16.5px}
+.th-wide{margin-top:18px;text-align:center}
+.th-wide .mono{font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.th-wide h3{font-size:clamp(22px,2.4vw,28px)}
+.th-base{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;margin-top:36px;padding:32px;border-radius:14px;background:#0a0b10;color:#f3f2ee}
+.th-say ul{list-style:none;margin:10px 0;padding:0;display:grid;gap:6px;font:600 clamp(17px,1.8vw,21px)/1.35 var(--vb-sans)}
+.th-say .mono{font-family:var(--vb-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#a9abb8;margin:14px 0 0}
+.th-a{color:#5aa9ff;font:600 clamp(24px,2.6vw,32px)/1.1 var(--vb-sans);margin:0}
+.th-b{color:#ff6b6b;font:600 clamp(24px,2.6vw,32px)/1.1 var(--vb-sans);margin:12px 0 0;text-align:right}
+.th-emb{margin:0;text-align:center;color:#f3f2ee}
+.th-emb svg{max-width:100%;height:auto}
+.th-emb figcaption{font-family:var(--vb-mono);font-size:12px;color:#a9abb8;margin-top:6px}
+.th-two{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;margin-top:36px}
+.th-gloss dl{margin:16px 0 0;display:grid;gap:14px}
+.th-gloss dt{font-weight:650;color:var(--c-fg)}
+.th-gloss dd{margin:2px 0 0;color:var(--c-fg2)}
+.th-note{font-size:13px;color:var(--c-fg3);margin-top:14px}
+.th-einstein{padding:26px;border-radius:14px;border:1px solid var(--c-line);background:var(--c-bg)}
+.th-einstein p{color:var(--c-fg2)}
+@media (max-width:900px){.th-grid,.th-base,.th-two{grid-template-columns:1fr}}
+/* Forschung: Modelle */
+.mod-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:start}
+.mod-grid figure{margin:0}
+.mod-grid figcaption{margin-top:10px;color:var(--c-fg2);font-size:15.5px}
+.mod-grid figcaption b{display:block;color:var(--c-fg)}
+@media (max-width:760px){.mod-grid{grid-template-columns:1fr}}
+/* Literatur: Neufassung */
+.neu-note .nn{margin:0;padding:16px 20px;border-radius:10px;border:1px dashed currentColor;background:color-mix(in srgb,#c47ad3 12%,transparent)}
+/* /mantis/ */
+.pvis-mantis .media{background:#070a14;border-radius:16px;overflow:hidden}
+.mt-cta{margin-top:22px}

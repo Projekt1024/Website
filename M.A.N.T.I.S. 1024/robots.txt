@@ -1,0 +1,6 @@
+# Vorschau: Suchmaschinen ausgesperrt. Vor Go-live ersetzen durch:
+# User-agent: *
+# Allow: /
+# Sitemap: https://www.mantis1024.ai/sitemap.xml
+User-agent: *
+Disallow: /
